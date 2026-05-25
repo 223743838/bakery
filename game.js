@@ -12,8 +12,8 @@ startGameBtn.addEventListener("click", function () {
   scoreText.textContent = score;
   gameArea.style.display = "block";
  
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
+  window.dataLayer1 = window.dataLayer1 || [];
+  window.dataLayer1.push({
     event: "game_start",
     game_name: "cupcake_clicker"
   });
@@ -25,15 +25,15 @@ cupcakeBtn.addEventListener("click", function () {
   score++;
   scoreText.textContent = score;
  
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
+  window.dataLayer1 = window.dataLayer1 || [];
+  window.dataLayer1.push({
     event: "cupcake_click",
     game_name: "cupcake_clicker",
     score: score
   });
  
   if (score === 5) {
-    window.dataLayer.push({
+    window.dataLayer1.push({
       event: "level_up",
       game_name: "cupcake_clicker",
       level: 1,
@@ -45,8 +45,8 @@ cupcakeBtn.addEventListener("click", function () {
 });
  
 endGameBtn.addEventListener("click", function () {
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
+  window.dataLayer1 = window.dataLayer1 || [];
+  window.dataLayer1.push({
     event: "game_complete",
     game_name: "cupcake_clicker",
     final_score: score
@@ -60,8 +60,8 @@ endGameBtn.addEventListener("click", function () {
 contactForm.addEventListener("submit", function (event) {
   event.preventDefault();
  
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
+  window.dataLayer1 = window.dataLayer1 || [];
+  window.dataLayer1.push({
     event: "form_submit",
     form_name: "bakery_contact_form"
   });
