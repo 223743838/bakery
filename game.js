@@ -12,8 +12,8 @@ startGameBtn.addEventListener("click", function () {
   scoreText.textContent = score;
   gameArea.style.display = "block";
  
-  window.dataLayer1 = window.dataLayer1 || [];
-  window.dataLayer1.push({
+  window.dataLayer = window.dataLayer1 || [];
+  window.dataLayer.push({
     event: "game_start",
     game_name: "cupcake_clicker"
   });
@@ -25,8 +25,8 @@ cupcakeBtn.addEventListener("click", function () {
   score++;
   scoreText.textContent = score;
  
-  window.dataLayer1 = window.dataLayer1 || [];
-  window.dataLayer1.push({
+  window.dataLayer = window.dataLayer1 || [];
+  window.dataLayer.push({
     event: "cupcake_click",
     game_name: "cupcake_clicker",
     score: score
