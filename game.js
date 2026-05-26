@@ -25,8 +25,8 @@ cupcakeBtn.addEventListener("click", function () {
   score++;
   scoreText.textContent = score;
  
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
+  window.dataLayer1 = window.dataLayer || [];
+  window.dataLayer1.push({
     event: "cupcake_click",
     game_name: "cupcake_clicker",
     score: score
